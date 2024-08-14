@@ -1,0 +1,15 @@
+<div class="transaction-list">
+  <div *ngIf="loading$ | async">Loading...</div>
+  <div *ngIf="error$ | async as error">Error: {{ error }}</div>
+  <ul>
+    <li class="transaction-item" *ngFor="let transaction of transactions$ | async">
+      <span class="transaction-date">{{ transaction.date }}</span>
+      <span class="transaction-description">{{ transaction.description }}</span>
+      <span class="transaction-amount">{{ transaction.amount | currency }}</span>
+      <button (click)="onEdit(transaction)">Edit</button>
+      <button class="delete-button" (click)="onDelete(transaction.id)">delete</button>
+    </li>
+  </ul>
+</div>
+
+<!-- <app-transaction-form [transaction]="selectedTransaction"></app-transaction-form> -->

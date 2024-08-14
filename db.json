@@ -1,0 +1,52 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "date": "2023-01-01",
+      "amount": 2000,
+      "description": "Salary",
+      "category": "Income",
+      "type": "income"
+    },
+    {
+      "id": "2",
+      "date": "2023-01-02",
+      "amount": 20,
+      "description": "Groceries",
+      "category": "Food",
+      "type": "expense"
+    },
+    {
+      "id": "3",
+      "date": "20234-05-08",
+      "amount": 16,
+      "description": "Gym Membership",
+      "category": "Health",
+      "type": "expense"
+    },
+    {
+      "id": "95da",
+      "date": "2024-08-09",
+      "amount": 23,
+      "description": "Gym Membership",
+      "category": "Health",
+      "type": "expense"
+    },
+    {
+      "id": "6088",
+      "date": "2024-08-09",
+      "amount": 6,
+      "description": "Description",
+      "category": "Health",
+      "type": "expense"
+    },
+    {
+      "id": "cb57",
+      "date": "2024-08-12",
+      "amount": 7,
+      "description": "Zink",
+      "category": "Health",
+      "type": "expense"
+    }
+  ]
+}

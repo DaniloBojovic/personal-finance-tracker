@@ -1,0 +1,29 @@
+<div class="transaction-form">
+  <h2>{{ transaction ? 'Edit Transaction' : 'Add Transaction' }}</h2>
+  <form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="date">Date</label>
+      <input id="date" formControlName="date" type="date" />
+    </div>
+    <div>
+      <label for="amount">Amount</label>
+      <input id="amount" formControlName="amount" type="number" />
+    </div>
+    <div>
+      <label for="description">Description</label>
+      <input id="description" formControlName="description" type="text" />
+    </div>
+    <div>
+      <label for="category">Category</label>
+      <input id="category" formControlName="category" type="text" />
+    </div>
+    <div>
+      <label for="type">Type</label>
+      <select id="type" formControlName="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+    </div>
+    <button type="submit" [disabled]="transactionForm.invalid">{{ transaction ? 'Update' : 'Save' }}</button>
+  </form>
+</div>
